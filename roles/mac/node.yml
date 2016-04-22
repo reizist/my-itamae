@@ -2,3 +2,19 @@ cask_packages:
   - google-chrome
   - google-japanese-ime
   - iterm2
+  - slack
+  - alfred
+  - shiftit
+brew_packages:
+  - ghq
+  - peco
+  - direnv
+  - git
+  - httpie
+  - hub
+  - macvim
+  - redis
+  - tig
+  - zsh
+  - graphviz
+  - htop-osx
