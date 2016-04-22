@@ -1,0 +1,4 @@
+cask_packages:
+  - google-chrome
+  - google-japanese-ime
+  - iterm2
