@@ -3,9 +3,17 @@ package 'http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0
 end
 
 package 'nginx' do
-  version "#{node[:nginx][:version]}"
+  version node[:nginx][:version]
 end
 
 service 'nginx' do
   action [:enable, :start]
+end
+
+node.validate! do
+  {
+    nginx: {
+      version: string
+    }
+  }
 end
